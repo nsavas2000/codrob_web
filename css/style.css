@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
 
-*{ margin: 0; padding: 0;}
+
 
 .body
 {
-  background-color: #f3998c;
+  background-color: #f6fdfd;
   transition: background-color .5s; 
 }
 
@@ -13,8 +13,8 @@
     justify-content: right;
 }
 
-.logojr{
-  width: 8rem;
+.logoBanner{
+  width: 10rem;
   height: auto;
 }
 
@@ -1080,33 +1080,130 @@ section {
   z-index: 999;
 }
 
+.navbar-nav .btn {
+  background-color: #ff6e00;
+  border-radius: 10px;
+  transition: all 0.3s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar-nav .btn:hover {
+  background-color: #28a745;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+
+.carousel-item img{
+  border-radius: 20px;
+}
 
 /* Style for google translate element */
 #google_translate_element {
-          margin-left: 15px;
-      }
+  display: inline-block;
+  background-color: #ff6e00;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  transition: all 0.3s;
+}
+#google_translate_element:hover {
+  background-color: #28a745;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.goog-te-gadget-icon {
+  display: none;
+}
+.goog-te-gadget-simple {
+  color: white !important;
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+.goog-te-gadget-simple .goog-te-menu-value {
+  display: none !important;
+}
+.goog-te-menu2 {
+  border: none !important;
+}
+.goog-te-menu2 a {
+  color: white !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+.goog-te-menu2-item div,
+.goog-te-menu2-item span.text {
+  color: white !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
 
-.goog-te-banner-frame {
-          display: none !important;
-      }
+#google_translate_element_container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  cursor: pointer;
+}
 
-.goog-te-gadget {
-          font-family: Arial, sans-serif;
-          font-size: 14px;
-          color: #007bff;
-      }
+.footer {
+  background-color: #324158;
+  color: white;
+  padding: 20px 0;
+  padding: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.social-icons{
+  text-align: center;
+}
+.social-icons a {
+  color: white;
+  margin-right: 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+.subscription-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.contact-info {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.contact-info h5{
+  color: #0dd29c;
+}
 
-.goog-te-gadget .goog-te-combo {
-          border: 1px solid #007bff;
-          border-radius: 4px;
-          padding: 5px;
-          background-color: #ffffff;
-          color: #007bff;
-      }
+.contact-info span{
+  color: #ff6e00;
+}
 
-.goog-te-gadget .goog-te-combo:hover {
-          border-color: #0056b3;
-          color: #0056b3;
-      }
+.footer h2{
+  color:#ff6e00;
+}
+.footer p{
+  font-size: 16px;
+  color:#d9faff;
+}
+
+.footer .btn{
+  background-color: #ff6e00;
+}
+
+.footer-links {
+  margin-top: 20px;
+  text-align: center;
+}
+.footer-links a {
+  color: #0dd29c;
+  margin: 0 10px;
+  text-decoration: none;
+}
 
 
