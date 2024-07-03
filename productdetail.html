@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="PinooJr ile çocuklar için eğlenceli ve öğretici kodlama deneyimi yaşayın.">
+    <title>Ürün Detay</title>
+    <script src="js/scrollreveal.js"></script>
+    <link rel="icon" href="image/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+              <img src="image/codroblogo.gif" class="logoBanner" alt="codrob-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item m-2">
+                      <button class="btn nav-link" onclick="location.href='index.html'"  style="color: white;">
+                          <i class="fa-solid fa-house"></i> Anasayfa<span class="sr-only">(current)</span>
+                      </button>
+                  </li>
+                  <li class="nav-item m-2">
+                      <button class="btn nav-link" onclick="location.href='https://editor.codrob.com.tr/Frontpage/index.html'" style="color: white;">
+                          <i class="fa-solid fa-book"></i> CodRob Editör
+                      </button>
+                  </li>
+                  <li class="nav-item m-2">
+                      <button class="btn nav-link" onclick="location.href='#'" style="color: white;">
+                          <i class="fa-solid fa-book"></i> Eğitimler
+                      </button>
+                  </li>
+                  <li class="nav-item dropdown m-2">
+                    <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-phone-volume"></i> Kurumsal
+                      </a>
+                    
+                      <ul class="dropdown-menu">
+                        <li> <a class="dropdown-item" href="about.html">Hakkımızda</a></li>
+                        <li><a class="dropdown-item" href="">Politikalar</a></li>
+                        <li> <a class="dropdown-item" href="">Sözleşmeler</a></li>
+                        <li><a class="dropdown-item" href="">SSS</a></li>
+                        <li><a class="dropdown-item" href="">Codrob Kariyer</a></li>
+                        <li><a class="dropdown-item" href="contact.html">İletişim</a></li>
+                      </ul>
+                    </div>
+                    
+                  </li>
+                  <li class="nav-item m-2">
+                      <button class="btn nav-link" onclick="location.href='shop.html'" style="color: white;">
+                          <i class="fa-solid fa-cart-shopping"></i> Ürünler
+                      </button>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+
+      <!-- Ürün Detayları -->
+      <div class="container mt-5" style="background-color: #f7feff;">
+       
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center" style="background-color: white;">
+                <div class="slider">
+                    <div class="slides">
+                        <img src="image/shop/d1.png" alt="Resim 1" class="slide">
+                        <img src="image/shop/d2.png" alt="Resim 2" class="slide">
+                        <img src="image/shop/d3.png" alt="Resim 3" class="slide">
+                    </div>
+                </div>
+                <div class="thumbnails">
+                    <img src="image/shop/d1.png" alt="Resim 1" class="thumbnail" onclick="showSlide(0)">
+                    <img src="image/shop/d2.png" alt="Resim 2" class="thumbnail" onclick="showSlide(1)">
+                    <img src="image/shop/d3.png" alt="Resim 3" class="thumbnail" onclick="showSlide(2)">
+                </div>
+            
+            </div>
+            <div class="col-md-6 producttextarea">
+                <h1>CODROB DRONEBOT SET</h1>
+                <h6>Ürün Kodu: 5400</h6>
+                <h3>Fiyat: 7.400 TL</h3>
+                <h6>
+                    Codrob DroneBot, kullanıcıların blockly ve python ile kodlama ve kontrol yeteneklerini keşfetmelerini sağlar. Otonom veya uzaktan kontrolle uçuş deneyimini yaşayabilirsiniz. 
+                </h6>
+                <button class="btn btn-outline-secondary" onclick="openPopup()">Satın Alma Seçenekleri</button>
+            </div>
+        </div>
+
+        <!-- Ürün Açıklaması -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-10 productdetailarea">
+                <div class="col-10">
+                    <h3>Ürün Açıklaması</h3>
+                    <hr>
+                    <iframe width="760" height="515" src="https://www.youtube.com/embed/uzr-jrLU3EU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>DroneBot, siz çocukların robotik kodlama derslerinde faydalanabileceği bir eğtim kitidir.</p>
+                    <h5>DroneBot İçin Gerekli Malzemeler:</h5>
+                    <ul class="text-left">
+                        <li><p>Arduino Uno</p></li>
+                        <li><p>Arduino Sensor Shield</p></li>
+                        <li><p>12 Adet SG90 Servo Motor</p></li>
+                        <li><p>1 Adet 3.7v Lipo veya 2 Adet 18650 Batarya</p></li>
+                        <li><p>Bluetooth (opsiyonel-robotunuzu android uygulama üzerinden kontrol edebilirsiniz)</p></li>
+                    </ul>
+                    <h5>Set İçeriği:</h5>
+                    <ul class="text-left">
+                        <li><p>3D PLA Malzeme Robot Parçaları</p></li>
+                        <li><p>Vida ve Somun Seti</p></li>
+                        <li><p>10K Potansiyometre</p></li>
+                        <li><p>9V-DC Barrel Dönüştürücü Kablo</p></li>
+                        <li><p>LM35 Sıcaklık Sensörü</p></li>
+                        <li><p>Buzzer</p></li>
+                        <li><p>Led Kırmızı</p></li>
+                        <li><p>Led Kırmızı</p></li>
+                        <li><p>Led Kırmızı</p></li>
+                        <li><p>Led Kırmızı</p></li>
+                        <li><p>Led Kırmızı</p></li>
+                        <li><p>Led Kırmızı</p></li>
+                    </ul>
+                    <div class="alert alert-primary" role="alert">
+                        <p>CodRob Editör ile Kodlamaya Başlayabilirsin</p>
+                      </div>
+                      
+                </div>
+                    
+            </div>
+        </div>
+      </div>
+  </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <!-- Left Section -->
+              <div class="col-md-3">
+                  <img src="image/codroblogo3.png" alt="Logo" class="img-fluid mb-3">
+                  <div class="social-icons">
+                      <a href="#"><i class="fab fa-facebook"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+              <div class="col"></div>
+              <!-- Center Section -->
+              <div class="col-md-4" style="margin-top: 3rem;">
+                  <h2>E-Posta Listemize Abone Olun</h2>
+                  <p>E-posta Adresi*</p>
+                  <form class="subscription-form">
+                      <input type="email" class="form-control" required style="background-color: #d9faff;">
+                      <button type="submit" class="btn btn-danger">Katıl</button>
+                  </form>
+              </div>
+              <div class="col"></div>
+              <!-- Right Section -->
+              <div class="col-md-3 contact-info">
+                  <h5>İletişim:</h5>
+                  <p><span>E </span>info@codrob.com.tr</p>
+                  <p><span>T </span>+90 (262) 644 89 40</p>
+                  <p><span>F </span>+90 (262) 644 89 40</p>
+                  <p><span>A </span>İnönü Mah. Gebze Güzeller OSB Mah. Nursultan Nazarbayev Sok No: 16/3 P.K:41400 Gebze/Kocaeli</p>
+              </div>
+          </div>
+      </div>
+      <div class="footer-links">
+        <a href="#">Kullanım Koşulları</a>
+        <a href="#">Üyelik Sözleşmesi</a>
+        <a href="#">Gizlilik Politikası</a>
+        <a href="#">Ön Bilgilendirme Formu</a>
+        <a href="#">Mesafeli Satış Sözleşmesi</a>
+    </div>
+    
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup()"><i class="fa-solid fa-x"></i></button></br>
+            <h2>Satın Alma Seçenekleri</h2>
+            <div class="button-container">
+                <button class="btn-outline-secondary">Robotistan</button>
+                <button class="btn-outline-secondary">Trendyol</button>
+                <button class="btn-outline-secondary">Hepsiburada</button>
+            </div>
+        </div>
+    </div>
+
+
+    </footer>
+      <!-- Footer -->
+    
+        </div>
+    
+        <script src="js/script.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+  </body>
+  </html>

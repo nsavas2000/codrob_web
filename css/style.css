@@ -240,7 +240,7 @@
 .balonImg{
   position: absolute;
   top:10%;
-  right: 10%;
+  left: 10%;
   animation: balonImg 20s ease-in-out infinite;
 }
 @keyframes balonImg{
@@ -960,6 +960,11 @@ section {
   overflow: hidden;
   margin: 10px;
 }
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
 .card-body h4{
   color: rgb(21, 90, 104);
   font-family: cursive;
@@ -974,8 +979,15 @@ section {
   font-family: cursive;
 }
 
-.card-img-top{
-  padding: 2rem;
+.card-img-top {
+  width: 80%;
+  height: auto;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
 }
 
 
@@ -1015,7 +1027,7 @@ section {
   margin-bottom: 20px;
 }
 .card {
-  width: 18rem;
+  width: 25rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
@@ -1206,4 +1218,131 @@ section {
   text-decoration: none;
 }
 
+.shopButtons{
+  text-align: center;
+}
+.shopButtons .btn{
+  width: 12rem;
+  margin: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
 
+.producttextarea{
+  text-align: left;
+  padding-bottom: 5rem;
+  background-color: #F6F5F5;
+  color: #324158;
+  font-weight: bold;
+  border-radius: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.producttextarea h1{
+  color: #324158;
+  margin-top: 2rem;
+}
+.producttextarea h3{
+  color: orangered;
+  margin-top: 2rem;
+  border-radius: 20px;
+}
+.producttextarea h6{
+  margin-top: 2rem;
+}
+.producttextarea .btn{
+  margin-top: 2rem;
+}
+
+.productdetailarea{
+  color: #324158;
+  margin-bottom: 5rem;
+}
+.productdetailarea p{
+  font-size: 20px;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  margin: 0 10px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h2 {
+  font-size: 20px;
+}
+
+.popup-content hr {
+  margin: 10px 0 20px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 120px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #999;
+}
+
+.close-btn:hover {
+  color: #555;
+}
+
+.btn-outline-secondary {
+  border: 2px solid #ccc;
+  color: #333;
+  background-color: transparent;
+}
